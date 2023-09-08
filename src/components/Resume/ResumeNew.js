@@ -1,26 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+// import Particle from "../Particle";
+// import RohitImage from '../Assets/Rohit.png';
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { Document } from "react-pdf";
+import RohitImage from "../../Assets/Projects/Rohit.png";
 
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// function ResumeNew() {
+//   const [width, setWidth] = useState(1200);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
+//   useEffect(() => {
+//     setWidth(window.innerWidth);
+//   }, []);
+const ResumeNew = () => {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+        {/* <Particle /> */}
+        {/* <Row style={{ justifyContent: "center", position: "relative" }}> */}
+        {/* <Button
             variant="primary"
             href={pdf}
             target="_blank"
@@ -28,17 +29,28 @@ function ResumeNew() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button>
-        </Row>
+          </Button> */}
+        {/* </Row> */}
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+  <img
+    src={RohitImage}
+    alt="Rohit's resume"
+    className="w-75%"
+    style={{
+      flexShrink: 0,
+      width: '75%',
+      maxWidth: '100%',
+      paddingRight: 'calc(var(--bs-gutter-x) * .5)',
+      paddingLeft: 'calc(var(--bs-gutter-x) * .5)',
+      marginTop: 'var(--bs-gutter-y)',
+    }}
+  />
+</Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+
+        {/* <Row style={{ justifyContent: "center", position: "relative" }}> */}
+        {/* <Button
             variant="primary"
             href={pdf}
             target="_blank"
@@ -46,11 +58,11 @@ function ResumeNew() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button>
-        </Row>
+          </Button> */}
+        {/* </Row> */}
       </Container>
     </div>
   );
-}
+};
 
 export default ResumeNew;
