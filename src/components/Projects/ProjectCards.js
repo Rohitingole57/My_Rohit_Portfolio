@@ -14,8 +14,8 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         {/* <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+        <CgWebsite /> &nbsp;
+          {props.isBlog ? "Blog" : "Link"}
         </Button> */}
         {"\n"}
         {"\n"}
@@ -29,7 +29,7 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
+             &nbsp;
             {"Demo"}
           </Button>
         )}

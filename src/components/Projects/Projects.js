@@ -6,6 +6,8 @@ import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import extc from "../../Assets/Projects/extc.png";
+import linkedin from "../../Assets/Projects/Linkedin.png";
+import masai from "../../Assets/Projects/Masai.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import dbatu from "../../Assets/Projects/dbatu.png";
 
@@ -21,7 +23,27 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={linkedin}
+              isBlog={false}
+              title="LinkedIn"
+              description="Tried to create LinkeIN Clone concetrated on login/Logout AUTH database and multiple user login     NOTE: Open in INCOGNITO "
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://linkedin-clone-swart-six.vercel.app/"
+            />
+          </Col>
 
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={masai}
+              isBlog={false}
+              title="Masai School"
+              description="Masai Scool is a Teaching Platform i tried to clone the frontend"
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://masai-clone-blue.vercel.app/"
+            />
+          </Col>
 
           <Col md={6} className="project-card">
             <ProjectCard
@@ -29,8 +51,8 @@ function Projects() {
               isBlog={false}
               title="extc"
               description="It is a website for the branch E&TC which contains all information about branch, faculty, placements, alumina’s and album."
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
+              // ghLink="https://github.com/Rohitingole57/EXTC"
+              demoLink="https://github.com/Rohitingole57/EXTC"
             />
           </Col>
 
@@ -41,7 +63,7 @@ function Projects() {
               title="dbatu"
               description="Its a DBATU university related website in which the all branches data like previous year exam papers, mini project's ppt and reports for reference and album section."
               // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              // demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://github.com/Rohitingole57/DBATU-STUDENT-DRIVE-front-end-website-"
             />
           </Col>
 
@@ -86,7 +108,7 @@ function Projects() {
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"     
             />
           </Col> */}
         </Row>

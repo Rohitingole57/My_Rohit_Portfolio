@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 // import RohitImage from '../Assets/Rohit.png';
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document } from "react-pdf";
-import RohitImage from "../../Assets/Projects/Rohit.png";
+import RohitImage from "../../Assets/Projects/Rohit.jpg";
 
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
